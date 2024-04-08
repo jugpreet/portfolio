@@ -1,23 +1,23 @@
-import logo from './logo.svg';
+import { useRef } from 'react';
 import './App.css';
-
+import Header from './Header';
+import FirstIntro from './FirstInto';
+import About from './About';
+import Projects from './Projects';
+import Contacts from './Contacts';
+import { Background } from './assets/background';
 function App() {
+  const about = useRef(null);
+  const projects = useRef(null);
+  const contact = useRef(null);
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className=''>
+      <div className='z-[-1] fixed opacity-25'><Background/></div>
+      <Header about={about} projects={projects} contact={contact}/>
+      <FirstIntro/>
+      <div ref={about}><About/></div>
+      <div ref={projects}><Projects/></div>
+      <div ref={contact}><Contacts/></div>
     </div>
   );
 }
