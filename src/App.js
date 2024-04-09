@@ -5,14 +5,17 @@ import FirstIntro from './FirstInto';
 import About from './About';
 import Projects from './Projects';
 import Contacts from './Contacts';
-import { Background } from './assets/background';
+import "./stars.scss";
+
 function App() {
   const about = useRef(null);
   const projects = useRef(null);
   const contact = useRef(null);
   return (
-    <div className=''>
-      <div className='z-[-1] fixed opacity-25'><Background/></div>
+    <div className='bg-image background'>
+      <div id="stars" />
+        <div id="stars2" />
+        <div id="stars3" />
       <Header about={about} projects={projects} contact={contact}/>
       <FirstIntro/>
       <div ref={about}><About/></div>

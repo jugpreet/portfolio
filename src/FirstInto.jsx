@@ -1,6 +1,6 @@
 const FirstIntro = () => {
   return (
-    <div className="lg:h-[70vh] p-5 lg:px-40 flex items-center">
+    <div className="lg:h-[100vh] p-5 lg:px-40 flex items-center text-white">
       <div>
         <div className="text-xl lg:text-7xl mb-10 font-bold">
           <p>Hi,</p>
