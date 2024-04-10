@@ -17,10 +17,10 @@ function App() {
         <div id="stars2" />
         <div id="stars3" />
       <Header about={about} projects={projects} contact={contact}/>
-      <FirstIntro/>
-      <div ref={about}><About/></div>
-      <div ref={projects}><Projects/></div>
-      <div ref={contact}><Contacts/></div>
+      <div className='h-[50vh]'><FirstIntro/></div>
+      <div ref={about} className='h-[50vh]'><About/></div>
+      <div ref={projects} className='h-[150vh]'><Projects/></div>
+      <div ref={contact} className='h-[50vh]'><Contacts/></div>
     </div>
   );
 }

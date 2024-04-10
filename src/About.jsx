@@ -1,6 +1,6 @@
 const About = () => {
   return (
-    <div className="lg:h-[70vh] p-5 lg:px-40 items-center" id="about">
+    <div className="p-5 lg:px-40 items-center" id="about">
         <h3>About Me</h3>
       <p className="w-9/12 text-xl font-thin">
         {`Hi, My Name Is Jugpreet Kaur, people gave me different names like 
