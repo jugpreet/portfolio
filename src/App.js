@@ -15,7 +15,7 @@ function App() {
         <div id="stars2" />
         <div id="stars3" />
       <Header about={about} projects={projects}/>
-      <div className='h-[50vh]'><FirstIntro/></div>
+      <div className='h-[100vh]'><FirstIntro/></div>
       <div ref={about} className='h-[50vh]'><About/></div>
       <div ref={projects} className='h-[150vh]'><Projects/></div>
     </div>

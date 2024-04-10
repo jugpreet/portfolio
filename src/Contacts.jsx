@@ -16,8 +16,8 @@ const Contacts = ()=>{
             });
         });
     }
-    return <div className="p-5 lg:px-40 items-center">
-            <h3>Get in touch</h3>
+    return <div className="p-5 lg:px-40 items-center text-white">
+            <h3>Let's Get in touch</h3>
             <div className="flex w-9/12 text-xl font-thin"><p className="p-5">jugpreet12345@gmail.com</p>
             <span className="p-5">Phone: 7894235013</span>
             <button className="p-5 pointer-events-auto" onClick={downloadResume}>Download Resume</button></div>
