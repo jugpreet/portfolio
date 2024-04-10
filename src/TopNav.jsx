@@ -1,5 +1,5 @@
 
-const TopNav = ({about,projects, contact})=>{
+const TopNav = ({about,projects})=>{
     const scrollToTop =(eleRef)=>[
         window.scrollTo({
             top : eleRef.current.offsetTop,
@@ -14,9 +14,6 @@ const TopNav = ({about,projects, contact})=>{
                 </li>
                 <li onClick = {()=>{scrollToTop(projects)}}>
                     Projects
-                </li>
-                <li onClick = {()=>{scrollToTop(contact)}}>
-                    Contact
                 </li>
             </ul>
         </div>
