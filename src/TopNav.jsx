@@ -1,5 +1,5 @@
 
-const TopNav = ({about,projects})=>{
+const TopNav = ({about,projects, skills})=>{
     const scrollToTop =(eleRef)=>[
         window.scrollTo({
             top : eleRef.current.offsetTop,
@@ -9,10 +9,13 @@ const TopNav = ({about,projects})=>{
     return (
         <div>
             <ul className="flex list-none justify-between float-right lg:w-[50vh] text-white">
-                <li onClick = {()=>{scrollToTop(about)}}>
+                <li className="m-2" onClick = {()=>{scrollToTop(about)}}>
                     About
                 </li>
-                <li onClick = {()=>{scrollToTop(projects)}}>
+                <li className="m-2" onClick = {()=>{scrollToTop(skills)}}>
+                    Skills
+                </li>
+                <li className="m-2" onClick = {()=>{scrollToTop(projects)}}>
                     Projects
                 </li>
             </ul>
