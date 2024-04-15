@@ -16,7 +16,7 @@ function App() {
       <div id="stars" />
         <div id="stars2" />
         <div id="stars3" />
-      <Header about={about} projects={projects} skills={skills}/>
+      <div className='h-[10vh]'> <Header about={about} projects={projects} skills={skills}/></div>
       <div className='h-[100vh]'><FirstIntro/></div>
       <div ref={about} className='md:h-[30vh]'><About/></div>
       <div ref={skills} className='md:h-[30vh]'><Skills/></div>
